@@ -1,0 +1,124 @@
+@media (max-width: 920px) {
+  .desktop-btn {
+    display: none;
+  }
+  header {
+    padding: 1.5rem 0;
+
+    transition: all 0.5s;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      #nav button {
+        border: none;
+      }
+      #nav #btn-menu {
+        display: block;
+      }
+    }
+  }
+
+  #btn-menu {
+    background: none;
+    display: block;
+    > span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 9999px;
+      background-color: #000;
+    }
+    > span:not(:last-child) {
+      margin-bottom: 4px;
+    }
+    #btn-menu,
+    > span {
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  #btn-menu.active {
+    transition-delay: 0.6s;
+
+    > span:nth-child(2) {
+      width: 0;
+    }
+
+    > span:nth-child(1),
+    > span:nth-child(3) {
+      transition-delay: 0.4s;
+    }
+
+    > span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    > span:nth-child(3) {
+      transform: translateY(-5px) rotate(-45deg);
+    }
+  }
+
+  #menu {
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    right: 0%;
+    top: 4rem;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.6s;
+    border-radius: 10px;
+    padding: 2rem;
+    transform: translateX(-1000px);
+    gap: 1rem;
+  }
+  header.active-menu {
+    -webkit-box-shadow: 0 50vh 0 100vw rgba(0, 0, 0, 0.226);
+    -moz-box-shadow: 0 50vh 0 100vw rgba(0, 0, 0, 0.226);
+    box-shadow: 0 40vh 0 100vw rgba(0, 0, 0, 0.226);
+    list-style: none;
+
+    #menu {
+      transform: translateX(0);
+    }
+  }
+}
+
+/////////////////////////
+///
+header {
+  padding: 1.7rem 0;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  background-color: $White;
+  z-index: 100;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #btn-menu {
+      display: none;
+    }
+    #nav #menu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: clamp(0.8rem, 4vw, 3rem);
+
+      a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: $Dark-Blue;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: var(--light-blue);
+      }
+    }
+  }
+}

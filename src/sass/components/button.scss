@@ -1,0 +1,15 @@
+.btn-primary {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 400;
+  background: -webkit-linear-gradient(99deg, #31d35c 0%, #2bb7da 100%);
+  background: linear-gradient(99deg, #31d35c 0%, #2bb7da 100%);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn-primary:hover {
+  filter: brightness(1.2);
+}
