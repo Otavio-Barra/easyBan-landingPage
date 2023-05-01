@@ -1,0 +1,13 @@
+.title {
+  font-size: clamp(2.1rem, 4vw, 4rem);
+  font-weight: 100;
+  color: $Dark-Blue;
+  margin-bottom: 2rem;
+}
+.text-primary {
+  font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+  font-weight: 100;
+  line-height: 150%;
+  color: $Grayish-Blue;
+  margin-bottom: 2rem;
+}
