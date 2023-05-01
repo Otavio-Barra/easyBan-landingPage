@@ -101,14 +101,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     #btn-menu {
       display: none;
     }
+
     #nav #menu {
       list-style: none;
       display: flex;
       align-items: center;
       gap: clamp(0.8rem, 4vw, 3rem);
+      li {
+        position: relative;
+      }
+
+      li:not(:hover) a {
+        color: $Dark-Blue;
+        opacity: 0.5;
+      }
 
       a {
         font-size: 1rem;
@@ -116,8 +126,19 @@ header {
         color: $Dark-Blue;
         transition: 0.3s;
       }
-      a:hover {
-        color: var(--light-blue);
+      a::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        position: absolute;
+        background: -webkit-linear-gradient(99deg, #31d35c 0%, #2bb7da 100%);
+        background: linear-gradient(99deg, #31d35c 0%, #2bb7da 100%);
+        left: 0;
+        transition: all 0.3s ease;
+        bottom: -5px;
+      }
+      a:hover::after {
+        width: 100%;
       }
     }
   }
