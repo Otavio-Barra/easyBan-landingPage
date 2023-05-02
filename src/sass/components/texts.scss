@@ -11,3 +11,30 @@
   color: $Grayish-Blue;
   margin-bottom: 2rem;
 }
+.sub-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  color: $Dark-Blue;
+  margin-bottom: 2rem;
+}
+
+.text-second {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-weight: 100;
+  line-height: 150%;
+  color: $Grayish-Blue;
+  margin-bottom: 2rem;
+}
+
+.title-advantage {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-weight: 300;
+  color: $Dark-Blue;
+  margin-bottom: 1.5rem;
+}
+
+.text-advantage {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: $Grayish-Blue;
+  font-weight: 100;
+  line-height: 150%;
+}
