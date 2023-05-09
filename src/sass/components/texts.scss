@@ -15,6 +15,7 @@
   font-size: clamp(2rem, 3vw, 2.5rem);
   color: $Dark-Blue;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
 .text-second {
@@ -36,5 +37,23 @@
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   color: $Grayish-Blue;
   font-weight: 100;
+  line-height: 150%;
+}
+
+.author {
+  font-size: clamp(0.4rem, 3vw, 0.7rem);
+
+  color: $Grayish-Blue;
+  margin-bottom: 1rem;
+}
+
+.title-card {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+}
+.text-card {
+  color: $Grayish-Blue;
+  font-size: clamp(0.6rem, 3vw, 0.8rem);
   line-height: 150%;
 }

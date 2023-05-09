@@ -67,6 +67,36 @@ main {
   }
 }
 
+.latest-section {
+  padding: 6rem 0;
+  background-color: $Very-Light-Gray;
+
+  .cards-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: left;
+    justify-content: center;
+
+    .card {
+      max-width: 300px;
+      flex: 1 1 250px;
+      background-color: $White;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px 5px 0 0;
+      }
+      .content {
+        padding: 1.5rem;
+      }
+    }
+  }
+}
 @media (max-width: 920px) {
   body {
     text-align: center;
