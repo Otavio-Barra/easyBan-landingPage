@@ -16,7 +16,7 @@ Esta landing page apresenta um design moderno e responsivo, proporcionando uma e
 
 Acesse a landing page: [Easy Bank Landing Page](https://merry-bublanina-cfaa26.netlify.app/)
 
-![imagem do projeto](./design/desktop-preview.jpg)
+![Imagem do Projeto](design/desktop-preview.jpg)
 
 
 ## Responsividade
